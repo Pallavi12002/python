@@ -3,7 +3,7 @@ name: Python App Release Pipeline
 on:
   push:
     branches:
-      - main  # change to 'master' if your branch is called that
+      - main  # Change to 'master' if your default branch is 'master'
 
 jobs:
   release:
@@ -24,4 +24,4 @@ jobs:
 
       - name: 🚀 Run Deployment Script
         run: |
-          python deploy.py
+          python3 deploy.py
